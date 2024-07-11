@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      spacing: {
+        25: "6.25rem",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -67,10 +70,22 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        upDown: {
+          "0%": {
+            transform: "translate3d(0, 0, 0)",
+          },
+          "50%": {
+            transform: "translate3d(0, 6px, 0) scaleY(0.9)",
+          },
+          "100%": {
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        upDown: "upDown 1.4s ease-in-out infinite",
       },
     },
   },
