@@ -4,8 +4,10 @@ import { cn } from "@/lib/utils";
 import { init } from "ityped";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useStatesStore } from "@/lib/store";
 
 export default function KeyVisual() {
+  const isScrolled = useStatesStore((state) => state.isScrolled);
   useGSAP(() => {
     const itypeText = document.querySelector(".ityped-text") as Element;
     const curSplit: NodeListOf<Element> = document.querySelectorAll(
@@ -38,7 +40,11 @@ export default function KeyVisual() {
 
   return (
     <div className='keyVisual relative w-full'>
-      <div className='keyVisual_wrapper relative mx-10 mt-16 h-[calc(100vh-280px)] overflow-hidden rounded-3xl'>
+      <div
+        className={cn(
+          "keyVisual_wrapper relative mx-10 mt-25 h-[calc(100vh-280px)] overflow-hidden rounded-3xl transition-all duration-500",
+          isScrolled && "mt-16",
+        )}>
         <div
           className={cn(
             "title absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl font-black leading-snug text-white",
