@@ -38,7 +38,7 @@ export default function KeyVisual() {
 
   return (
     <div className='keyVisual relative w-full'>
-      <div className='keyVisual_wrapper relative mx-10 h-[calc(100vh-280px)] overflow-hidden rounded-3xl'>
+      <div className='keyVisual_wrapper relative mx-10 mt-16 h-[calc(100vh-280px)] overflow-hidden rounded-3xl'>
         <div
           className={cn(
             "title absolute z-10 flex h-full w-full flex-col items-center justify-center text-4xl font-black leading-snug text-white",
