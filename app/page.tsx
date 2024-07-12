@@ -1,5 +1,5 @@
-import KeyVisual from "@/components/pages/keyVisual";
-import { Icons } from "@/components/ui/icons";
+import KeyVisual from "@/components/pages/top/keyVisual";
+import { Icons } from "@/components/common/icons";
 
 export default function Home() {
   return (
