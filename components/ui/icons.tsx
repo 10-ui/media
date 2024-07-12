@@ -25,4 +25,25 @@ export const Icons = {
       />
     </svg>
   ),
+  arrowRight: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='12'
+      height='10'
+      viewBox='0 0 12 10'
+      fill='none'
+      {...props}>
+      <path
+        d='M1 4C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6L1 4ZM1 6L11 6V4L1 4L1 6Z'
+        fill='currentColor'
+      />
+      <path
+        d='M6.71387 1L10.9996 5L6.71387 9'
+        stroke='currentColor'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='bevel'
+      />
+    </svg>
+  ),
 };

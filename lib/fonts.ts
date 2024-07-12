@@ -1,4 +1,8 @@
-import { Noto_Sans_JP, Red_Hat_Display } from "next/font/google";
+import {
+  Noto_Sans_JP,
+  Red_Hat_Display,
+  Cinzel_Decorative,
+} from "next/font/google";
 import local from "next/font/local";
 
 const notoSansJP = Noto_Sans_JP({
@@ -9,6 +13,13 @@ const notoSansJP = Noto_Sans_JP({
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   variable: "--font-red-hat-display",
+});
+
+const cinzelDecorative = Cinzel_Decorative({
+  subsets: ["latin"],
+  weight: "700",
+  style: "normal",
+  variable: "--font-cinzel-decorative",
 });
 
 const lineFont = local({
@@ -39,5 +50,6 @@ const lineFont = local({
 export const fonts = {
   notoSansJP,
   redHatDisplay,
+  cinzelDecorative,
   lineFont,
 };
