@@ -57,7 +57,7 @@ export default function Header() {
           </Link>
         </Button>
         <Button variant='outline' size='icon' asChild>
-          <Link href='https://twitter.com/10_ui'>
+          <Link href='https://twitter.com/10_uis'>
             <Icons.X className='h-5 w-5' />
           </Link>
         </Button>
