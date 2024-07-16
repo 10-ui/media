@@ -2,6 +2,7 @@ import {
   Noto_Sans_JP,
   Red_Hat_Display,
   Cinzel_Decorative,
+  Luckiest_Guy,
 } from "next/font/google";
 import local from "next/font/local";
 
@@ -20,6 +21,13 @@ const cinzelDecorative = Cinzel_Decorative({
   weight: "700",
   style: "normal",
   variable: "--font-cinzel-decorative",
+});
+
+const luckiestGuy = Luckiest_Guy({
+  subsets: ["latin"],
+  weight: "400",
+  style: "normal",
+  variable: "--font-luckiest-guy",
 });
 
 const lineFont = local({
@@ -52,4 +60,5 @@ export const fonts = {
   redHatDisplay,
   cinzelDecorative,
   lineFont,
+  luckiestGuy,
 };
