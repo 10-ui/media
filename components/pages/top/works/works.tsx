@@ -33,24 +33,29 @@ export default function Works() {
         WORKS
       </h2>
       <ThumbnailCardContainer>
-        {articleData.map((article) => (
-          <ThumbnailCard key={article.title}>
-            <Link href={article.href} className='group block text-slate-600'>
-              <ThumbnailImageContainer>
-                <AspectRatio ratio={1.92 / 1}>
-                  <ThumbnailImage src={article.src} alt={article.alt} />
-                </AspectRatio>
-              </ThumbnailImageContainer>
-              <time
-                dateTime={article.date}
-                className="after:mx-4 after:inline-flex after:scale-75 after:content-['|']">
-                {formatDate(new Date(article.date), "YYYY年MM月DD日")}
-              </time>
-              <Badge variant='outline'>{article.category}</Badge>
-              <ThumbnailText>{article.title}</ThumbnailText>
-            </Link>
-          </ThumbnailCard>
-        ))}
+        {articleData.map(
+          (article, index) =>
+            index < 6 && (
+              <ThumbnailCard key={article.title}>
+                <Link
+                  href={article.href}
+                  className='group block text-slate-600'>
+                  <ThumbnailImageContainer>
+                    <AspectRatio ratio={1.92 / 1}>
+                      <ThumbnailImage src={article.src} alt={article.alt} />
+                    </AspectRatio>
+                  </ThumbnailImageContainer>
+                  <time
+                    dateTime={article.date}
+                    className="after:mx-4 after:inline-flex after:scale-75 after:content-['|']">
+                    {formatDate(new Date(article.date), "YYYY年MM月DD日")}
+                  </time>
+                  <Badge variant='outline'>{article.category}</Badge>
+                  <ThumbnailText>{article.title}</ThumbnailText>
+                </Link>
+              </ThumbnailCard>
+            ),
+        )}
       </ThumbnailCardContainer>
     </>
   );
