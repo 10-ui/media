@@ -37,7 +37,7 @@ export default function Works() {
           <ThumbnailCard key={article.title}>
             <Link href={article.href} className='group block text-slate-600'>
               <ThumbnailImageContainer>
-                <AspectRatio ratio={1.91 / 1}>
+                <AspectRatio ratio={1.92 / 1}>
                   <ThumbnailImage src={article.src} alt={article.alt} />
                 </AspectRatio>
               </ThumbnailImageContainer>

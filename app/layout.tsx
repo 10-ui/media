@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/header";
+import Footer from "@/components/common/footer";
 import { fonts } from "@/lib/fonts";
 import "./globals.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={fonts.notoSansJP.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
