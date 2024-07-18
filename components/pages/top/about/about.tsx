@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import articleData from "@/lib/articleData";
 
-export default function Works() {
+export default function About() {
   const formatDate = (date: Date, format: string): string => {
     format = format.replace(/YYYY/, date.getFullYear().toString());
     format = format.replace(
@@ -27,15 +27,15 @@ export default function Works() {
     <>
       <h2
         className={cn(
-          "text-5xl font-bold leading-normal",
+          "mt-30 text-5xl font-bold leading-normal",
           fonts.luckiestGuy.className,
         )}>
-        WORKS
+        ABOUT
       </h2>
       <ThumbnailCardContainer>
         {articleData.map((article) => (
           <ThumbnailCard key={article.title}>
-            <Link href={article.href} className='group block text-slate-600'>
+            <Link href={"/about/"} className='group block text-slate-600'>
               <ThumbnailImageContainer>
                 <AspectRatio ratio={1.91 / 1}>
                   <ThumbnailImage src={article.src} alt={article.alt} />

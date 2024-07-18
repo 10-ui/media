@@ -41,9 +41,13 @@ export default function Header() {
           "flex items-center gap-2",
           fonts.redHatDisplay.className,
         )}>
-        <Button variant='navigation'>WORKS</Button>
-        <Button variant='navigation'>ABOUT</Button>
-        <Button variant='navigation' asChild>
+        <Button variant='navigation' className='text-lg'>
+          WORKS
+        </Button>
+        <Button variant='navigation' className='text-lg'>
+          ABOUT
+        </Button>
+        <Button variant='navigation' asChild className='text-lg'>
           <Link href='https://zenn.dev/10_ui'>
             BLOG
             <Icons.arrowRightUp className='h-3.5 w-3.5' />
