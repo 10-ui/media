@@ -33,8 +33,8 @@ export default function Header() {
         "fixed left-0 top-0 z-20 flex h-25 w-full items-center justify-between bg-background px-10 transition-all duration-500",
         isScrolled && "h-16 border-b shadow-sm",
       )}>
-      <div className={fonts.cinzelDecorative.className}>
-        <h1 className='text-3xl font-bold'>SENTARO</h1>
+      <div className={cn(fonts.cinzelDecorative.className, "w-39")}>
+        <h1 className='text-center text-3xl font-bold'>SENTARO</h1>
       </div>
       <div
         className={cn(
@@ -50,7 +50,7 @@ export default function Header() {
           </Link>
         </Button>
       </div>
-      <div className='flex items-center gap-2'>
+      <div className='w-39 flex items-center justify-end gap-2'>
         <Button variant='outline' size='icon' asChild>
           <Link href='https://github.com/10-ui'>
             <Icons.gitHub className='h-5 w-5' />

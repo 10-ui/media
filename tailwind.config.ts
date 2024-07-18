@@ -21,6 +21,7 @@ const config = {
       spacing: {
         25: "6.25rem",
         30: "7.5rem",
+        39: "9.75rem",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -82,11 +83,33 @@ const config = {
             transform: "translate3d(0, 0, 0)",
           },
         },
+        arrowRight: {
+          "0%": {
+            opacity: "1",
+            transform: "translate3d(0, 0, 0)",
+          },
+          "50%": {
+            opacity: "0",
+            transform: "translate3d(10px, 0, 0)",
+          },
+          "50.1%": {
+            opacity: "0",
+            transform: "translate3d(-10px, 0, 0)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         upDown: "upDown 1.4s ease-in-out infinite",
+        arrowRight: "arrowRight 0.5s ease-in-out",
+      },
+      backgroundImage: {
+        "arrow-right": "url('/icons/arrow_right.svg')",
       },
     },
   },
