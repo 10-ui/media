@@ -22,6 +22,7 @@ const config = {
         25: "6.25rem",
         30: "7.5rem",
         39: "9.75rem",
+        276: "69rem",
       },
       colors: {
         border: "hsl(var(--border))",
