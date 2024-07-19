@@ -6,10 +6,10 @@ import { Icons } from "@/components/common/icons";
 
 export default function Footer() {
   return (
-    <footer className='bg-footer w-full'>
+    <footer className='w-full bg-footer'>
       <div
         className={cn(
-          "flex w-full flex-row items-center justify-center gap-8 border-b border-input py-8",
+          "flex w-full flex-row items-center justify-center gap-8 border-b border-[#464646] py-8",
           fonts.redHatDisplay.className,
         )}>
         <Button
