@@ -1,5 +1,5 @@
-import Works from "@/components/pages/top/works/works";
-import About from "./about/about";
+import Works from "@/components/pages/works/works";
+import About from "../about/about";
 
 export default function BodyContainer() {
   return (
