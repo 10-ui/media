@@ -5,4 +5,13 @@ type useStates = {
   setIsScrolled: (isScrolled: boolean) => void;
 };
 
-export type { IconProps, useStates };
+type Article = {
+  src: string;
+  alt: string;
+  href: string;
+  date: string;
+  category: string;
+  title: string;
+};
+
+export type { IconProps, useStates, Article };
