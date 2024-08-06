@@ -25,7 +25,7 @@ export default function BodyContainer() {
             )}>
             ABOUT
           </h2>
-          <ThumbnailCards articleData={articleData} />
+          {/* <ThumbnailCards articleData={articleData} /> */}
         </section>
       </div>
     </div>

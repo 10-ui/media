@@ -114,7 +114,7 @@ export default function FirstView() {
               opts={{ loop: true, containScroll: false }}
               plugins={[
                 Autoplay({
-                  delay: 5000,
+                  delay: 4000,
                 }),
                 Fade(),
               ]}>
@@ -122,7 +122,7 @@ export default function FirstView() {
                 <CarouselItem className='pl-0'>
                   <Image
                     src='/tops/top_siberian.jpeg'
-                    alt='サイベリアンの画像'
+                    alt='お気に入りのサイベリアンの画像'
                     fill
                     className='object-cover'
                   />
@@ -130,7 +130,31 @@ export default function FirstView() {
                 <CarouselItem className='pl-0'>
                   <Image
                     src='/tops/top_menhera.png'
-                    alt='menhera Productで使用した画像です'
+                    alt='menhera Productで使用した画像'
+                    fill
+                    className='object-cover'
+                  />
+                </CarouselItem>
+                <CarouselItem className='pl-0'>
+                  <Image
+                    src='/articles/shinyPokedex_2024.png'
+                    alt='ポケモン図鑑の画像'
+                    fill
+                    className='object-cover'
+                  />
+                </CarouselItem>
+                <CarouselItem className='pl-0'>
+                  <Image
+                    src='/articles/blog_2023.png'
+                    alt='ブログの画像'
+                    fill
+                    className='object-cover'
+                  />
+                </CarouselItem>
+                <CarouselItem className='pl-0'>
+                  <Image
+                    src='/articles/shinkyu_2023.jpg'
+                    alt='進級制作のfv画像'
                     fill
                     className='object-cover'
                   />
