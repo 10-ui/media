@@ -55,7 +55,7 @@ const articleData = [
     src: "/articles/link_garden_2023.png",
     alt: "link_garden_2023",
     href: "https://link-garden.vercel.app/",
-    date: "2024-11-10",
+    date: "2023-11-10",
     category: "学科横断プロジェクト",
     title:
       "Webデザイン科の学生と高度情報処理科の学生計5人で動物福祉のあり方、動物の「シアワセ」について学べるアプリを作成しました！",
