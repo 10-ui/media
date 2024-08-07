@@ -1,14 +1,5 @@
 const articleData = [
   {
-    src: "/tops/top_siberian.jpeg",
-    alt: "top_siberian",
-    href: "/works/",
-    date: "2024-07-18",
-    category: "サイト内ブログ",
-    title:
-      "エンジニアとして、今の自分にしかできないこと、将来の自分がやりたいこと",
-  },
-  {
     src: "/articles/torekore_2024.png",
     alt: "torekore_2024",
     href: "https://github.com/10-ui/Torekore",
@@ -16,6 +7,15 @@ const articleData = [
     category: "ネイティブアプリ制作",
     title:
       "React Nativeでネイティブアプリを作成しました。カード交換を通じて会話のきっかけになる、「Torekore」です！",
+  },
+  {
+    src: "/tops/top_siberian.jpeg",
+    alt: "top_siberian",
+    href: "/works/",
+    date: "2024-07-18",
+    category: "サイト内ブログ",
+    title:
+      "エンジニアとして、今の自分にしかできないこと、将来の自分がやりたいこと",
   },
   {
     src: "/articles/docs_torekore_2024.png",
