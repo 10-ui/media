@@ -33,7 +33,7 @@ const ThumbnailImageContainer = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "group-hover:after:animate-arrowRight group-hover:group relative mb-4 before:absolute before:bottom-0 before:right-0 before:z-10 before:block before:h-8 before:w-8 before:rounded-tl-lg before:bg-white after:absolute after:bottom-2.5 after:right-[9px] after:z-20 after:block after:h-2 after:w-3 after:bg-arrow-right after:bg-center after:bg-no-repeat",
+      "group-hover:group relative mb-4 before:absolute before:bottom-0 before:right-0 before:z-10 before:block before:h-8 before:w-8 before:rounded-tl-lg before:bg-white after:absolute after:bottom-2.5 after:right-[9px] after:z-20 after:block after:h-2 after:w-3 after:bg-arrow-right after:bg-center after:bg-no-repeat group-hover:after:animate-arrowRight",
       className,
     )}
     {...props}
@@ -49,7 +49,7 @@ const ThumbnailImage = React.forwardRef<
   <Image
     ref={ref}
     className={cn(
-      "block w-full rounded-xl object-cover group-hover:brightness-75",
+      "block h-full rounded-xl object-cover group-hover:brightness-75",
       className,
     )}
     {...props}

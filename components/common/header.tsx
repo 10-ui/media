@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { fonts } from "@/lib/fonts";
 import { Icons } from "@/components/common/icons";
@@ -34,15 +34,17 @@ export default function Header() {
         isScrolled && "h-16 border-b shadow-sm",
       )}>
       <div className={cn(fonts.cinzelDecorative.className, "w-39")}>
-        <h1 className='text-center text-3xl font-bold'>SENTARO</h1>
+        <Link href='/'>
+          <h1 className='text-center text-3xl font-bold'>SENTARO</h1>
+        </Link>
       </div>
       <div
         className={cn(
           "flex items-center gap-2",
           fonts.redHatDisplay.className,
         )}>
-        <Button variant='navigation' className='text-lg'>
-          WORKS
+        <Button variant='navigation' className='text-lg' asChild>
+          <Link href='/works'>WORKS</Link>
         </Button>
         <Button variant='navigation' className='text-lg'>
           ABOUT
